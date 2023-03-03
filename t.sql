@@ -1,1 +1,1 @@
-select nothing();
+show DATABASE;
