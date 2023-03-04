@@ -7,8 +7,6 @@
     <title>Kelvin Bank</title>
 </head>
 <body>
-    <?php include_once "nave.html"?>
-    <?php include_once "home.html"?>
-    
+    <?php include_once "connection.php"?>
 </body>
 </html>
