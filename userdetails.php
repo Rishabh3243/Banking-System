@@ -127,7 +127,7 @@
 
 </html>
 <?php
-include './connection2.php';
+include 'connection2.php';
 
 if (isset($_POST['submit'])) {
 

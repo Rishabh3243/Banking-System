@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>User Details</title>
+    <title>Money Transfer </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -44,12 +44,12 @@
 
 <body>
     <?php
-    include './connection2.php';
+    include 'connection2.php';
     $sql = "SELECT * FROM clients";
     $result = mysqli_query($conn, $sql);
     ?>
     <?php
-    include '../html/nave.html';
+    include 'nave.html';
     ?>
     <div class="bg-yellow-100 container">
         <br />
@@ -64,6 +64,7 @@
                                 <th scope="col" class="text-center py-2">Name</th>
                                 <th scope="col" class="text-center py-2">E-Mail</th>
                                 <th scope="col" class="text-center py-2">Bank Balance </th>
+                                <th scope="col" class="text-center py-2">Perform Transaction</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -76,6 +77,9 @@
                                         <td class="center py-2"><?php echo (isset($rows['c_name']) ? $rows['c_name'] : ''); ?></td>
                                         <td class="center py-2"><?php echo (isset($rows['c_mail']) ? $rows['c_mail'] : ''); ?></td>
                                         <td class="center py-2"><?php echo (isset($rows['c_balance']) ? $rows['c_balance'] : ''); ?></td>
+                                        <td class="center"><a href="userdetails.php?c_id=<?php echo $rows['c_id']; ?>"> 
+                                        <button type="button" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">Transfer Money</button>
+                                        </td>
                                     </tr>
                             <?php
                                 }
@@ -89,14 +93,14 @@
             </div>
         </div>
 
-        <pre class="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
+    <pre class="mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
 
 
-        </pre>
+    </pre>
     </div>
-    <?php
-        include_once "../html/footer.html"
-    ?>
+<?php
+include_once "footer.html"
+?>
 </body>
 
 </html>

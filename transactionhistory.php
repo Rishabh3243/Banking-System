@@ -43,7 +43,7 @@
             width:100%;
             text-align:center;
             height: 100px;
-            background-color: #ffc45d;
+            background-color: #fbca15;
             padding-top:30px;
             font-size:30px
         }
@@ -52,7 +52,7 @@
 
 <body>
     <?php
-    include '../html/nave.html';
+    include 'nave.html';
     ?>
     <header>
         <div class="a2">
@@ -105,7 +105,7 @@
         </div>
         </center>
         <?php
-        include_once "../html/footer.html"
+        include_once "footer.html"
         ?>
  </body>
 
