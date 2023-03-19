@@ -67,7 +67,7 @@
                         <?php
 
                         include 'connection2.php';
-
+                        $popp=1;
                         $sql = "SELECT * from transaction";
 
                         $query = mysqli_query($conn, $sql);
@@ -76,7 +76,7 @@
                         ?>
 
                             <tr>
-                                <td class="center py-2"><?php echo $rows['sr_no']; ?></td>
+                                <td class="center py-2"><?php echo $popp++; ?></td>
                                 <td class="center py-2"><?php echo $rows['sender']; ?></td>
                                 <td class="center py-2"><?php echo $rows['receiver']; ?></td>
                                 <td class="center py-2"><?php echo $rows['balance']; ?> </td>
