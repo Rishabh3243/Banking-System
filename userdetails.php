@@ -60,7 +60,7 @@
     <div class="bg-yellow-100 container-fluid">
 
         <?php
-        include './connection2.php';
+        include 'connection2.php';
         if (isset($_REQUEST['c_id'])) {
             $sid = $_GET['c_id'];
             $sql = "SELECT * FROM  clients where c_id=$sid";

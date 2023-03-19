@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="logo.png" type="image/png">
-
+    <link href="1.css" rel="stylesheet">
     <style>
         .mt-0 {
             padding: 10px;
@@ -39,14 +39,6 @@
         background-color: #efa536;
         color: white;
         }
-        .a2{
-            width:100%;
-            text-align:center;
-            height: 100px;
-            background-color: #fbca15;
-            padding-top:30px;
-            font-size:30px
-        }
     </style>
 </head>
 
@@ -74,7 +66,7 @@
                     <tbody>
                         <?php
 
-                        include './connection2.php';
+                        include 'connection2.php';
 
                         $sql = "SELECT * from transaction";
 

@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="logo.png" type="image/png">
+    <link href="1.css" rel="stylesheet">
     <style>
         .mt-0 {
             padding: 10px;
@@ -51,11 +52,13 @@
     <?php
     include 'nave.html';
     ?>
+        <div class="a2">
+            <b>Transfer Money</b>
+        </div><center>
     <div class="bg-yellow-100 container">
         <br />
         <div class="row">
             <div class="col">
-                <center>
                 <div class="container-fluid table-responsive-sm">
                     <table class="table-auto" id="customers">
                         <thead>
